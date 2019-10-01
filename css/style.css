@@ -1,0 +1,95 @@
+/* navigation bar */
+.navbar-brand {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: font-size 650ms;
+}
+.navbar-brand:hover {
+    font-size: 1.5rem;
+}
+.nav-item{
+    text-transform: uppercase;
+    
+}
+.nav-link{
+    color: rgb(12, 12, 24) !important; 
+    position: relative;
+}
+.current{
+    position: relative;
+}
+.nav-link::before,
+.current::before {
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    background-color: coral;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 650ms;
+}
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+/* home section */
+.circle-brand {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    
+}
+
+.circle-brand:nth-of-type(2){
+    background-color: black;
+    color: white;
+}
+
+.home-head h1{
+    font-size: 4.2rem;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.home-description p {
+    font-size: 0.8rem;
+    font-weight: 300px;
+    padding-bottom: 50px;
+}
+.home-header .btn {
+    padding: 12px 40px;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.scroll-circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid black;
+    line-height: 80px;
+    text-align: center;
+    font-size: 0.4rem;
+}
+
+.home::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, rgba(5, 131, 235, 0.9) 0%, rgba(8, 81, 240, 0.8) 100%), url("../img/computer.jpg") center no-repeat;
+}

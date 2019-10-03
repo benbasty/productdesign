@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 /* navigation bar */
 .navbar-brand {
     font-size: 1rem;
@@ -387,4 +390,299 @@ expertises section */
 .circle-craft p{
     color: white;
     font-size: 0.6rem;
+}
+
+/* news section */
+.news img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.news-head-details::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(44, 49, 53, 0.9) 0%, rgba(45, 46, 49, 0.8) 100%);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
+.news-head .news-head-desc {
+    position: absolute;
+    z-index: 100;
+    top: 40%;
+    left: 31%;
+    align-items: center;
+    text-align: center;
+}
+.news-head-desc h5{
+    font-size: 1rem;
+    color: #ffffff;
+}
+.news-head-details p{
+    color: #ffffff;
+    padding-top: 20px;
+}
+.news-head-desc .customer-infos img {
+    width: 60px;
+    height: 60px;
+}
+.news-head-desc .customer-infos h5 {
+    color: #ffffff;
+    font-size: 1rem;
+}
+.news-head-desc .customer-infos h6 {
+    color: #ffffff;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+
+/* responsive criterias */
+ /* Small devices (landscape phones, 576px and up)  */
+@media (max-width: 575.98px) { 
+    .circle-brand {
+        margin-left: 1px;
+    }
+    .home {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .home-head h1{
+        font-size: 1.8rem;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    }
+    
+    .home-description p {
+        padding-bottom: 15px;
+        padding-left: 20px;
+    }
+
+    .home-header .btn {
+        margin-bottom: 15px !important;
+    }
+
+    .home-more .full-blue-box{
+        display: none;
+    }
+    .scroll-circle{
+        margin-bottom: 20px;
+    }
+    .home-more{
+        width: 100%;
+        height: 100%;
+    }
+
+    .intro-header::before{
+        display: none;
+    }
+    .intro-header-head h1 {
+        padding-top: 80px;
+        padding-left: 60px; 
+        font-size: 1.3rem;
+    }
+    .intro-header-desc p { 
+        padding-left: 60px;   
+        font-size: 0.7rem; 
+    }
+    
+    .intro-header .btn{   
+        margin-left: 60px;  
+    }
+
+    .expertises{
+        width: 100%;
+        height: 100%;
+    }
+    .expertises-intro p {
+        font-size: 0.7rem;  
+        padding-bottom: 8px; 
+    }
+    .expertises-intro h1 {
+        font-size: 1.3rem;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .expertises .expertises-body {
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    
+    .expertises-body-details img{
+        margin-top: 15px;
+        margin-bottom: 5px;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .expertises-body-details button {
+        margin-top: 20px;
+    }
+    
+    .plans{
+        height:100%;
+        width:100%; 
+    }
+    .plans .plans-right {
+        height:100%;
+        width:100%;
+    }
+    .plans-left{
+        display: none;
+    }
+    .plans-right::before,
+    .plans-right::after {
+        display: none;
+    }
+    .plans-right-head h1{
+        padding-left: 60px;
+        padding-top: 80px; 
+        font-size: 1.3rem;
+    }
+    .plans-right-desc p{
+        padding-left: 60px;
+        font-size: 0.7rem;
+    }
+    
+    .plans-right .btn {
+        margin-left: 60px;
+    }
+
+
+    .first-row-work img,
+    .second-row-work img{
+        width: 100%;
+    }
+
+    .circle-craft{
+        top: 23% !important;
+        left: 22% !important;
+        /* margin-left: -40px; */
+        
+    }
+
+    .circle-craft h5{
+        color: white;
+        font-size: 1rem;
+        padding-top: 80px;
+    }
+
+    .circle-craft p{
+        color: white;
+        font-size: 0.6rem;
+    }
+
+    .news-head .news-head-desc {
+        /* top: 25% !important;
+        left: 2% !important; */
+        margin-left: -55px;
+    }
+    .news-head-desc h5{
+        font-size: 1.2rem;
+        
+    }
+    .news-head-details p{
+        font-size: 1.2rem !important;
+        padding-top: 20px;
+    }
+    .news-head-desc .customer-infos img {
+        width: 60px;
+        height: 60px;
+    }
+    .news-head-desc .customer-infos h5 {
+        color: #ffffff;
+        font-size: 1rem;
+    }
+    .news-head-desc .customer-infos h6 {
+        color: #ffffff;
+        font-size: 0.8rem;
+        opacity: 0.6;
+    }
+
+}
+
+@media (max-width: 768px) { 
+    .intro-header::before{
+        bottom: 0;
+        right: -10rem;
+        top: initial;
+        width: 500px;
+        height: 405px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+
+    .expertises{
+        width: 100%;
+        height: 100%;
+    }
+    .circle-craft{  
+        top: 25%;
+        left: 10%;
+        width: 200px;
+        height: 200px;
+        border: 1px solid white;
+    }
+    
+    .circle-craft h5{
+        font-size: 0.6rem;
+        padding-top: 60px;
+    }
+    
+    .circle-craft p{
+        color: white;
+        font-size: 0.4rem;
+    }
+
+    .news-head .news-head-desc {
+        top: 30% !important;
+        left: 14% !important;
+    }
+    .news-head-desc h5{
+        font-size: 1.2rem;
+        
+    }
+    .news-head-details p{
+        font-size: 1rem;
+        padding-top: 20px;
+    }
+    .news-head-desc .customer-infos img {
+        width: 60px;
+        height: 60px;
+    }
+    .news-head-desc .customer-infos h5 {
+        color: #ffffff;
+        font-size: 1rem;
+    }
+    .news-head-desc .customer-infos h6 {
+        color: #ffffff;
+        font-size: 0.8rem;
+        opacity: 0.6;
+    }
+
+}
+
+@media (max-width: 1024px){
+    .intro-header::before{   
+        right: -10rem;
+        top: 40rem;
+    }
+    .expertises{
+        width: 100%;
+        height: 100%;
+    }
+
+    .circle-craft{
+        top: 32%;
+        left: 10%;
+        
+    }
+    .news-head .news-head-desc {
+        top: 38%;
+        left: 22%;
+    }
 }
